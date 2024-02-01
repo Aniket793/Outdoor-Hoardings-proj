@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="./output.css" rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+
+    <link rel="stylesheet" href="./style.css">
+
+
+</head>
+
+<body>
+
+    <!-- ------------------------navbar------------------------ -->
+
+    <nav class="bg-white flex justify-between items-center border-b-2 border-gray-300 shadow-lg p-4 sticky z-50 top-0 "
+        style="height: 4.5rem;">
+
+        <div class="sm:hidden">
+            <button id="btn1" class="text-black p-2 focus:outline-none" onclick="mouseHandler">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"
+                    class="h-6 w-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7">
+                    </path>
+                </svg>
+            </button>
+        </div>
+        <div class="w-40 m-3">
+            <img src="https://outdoorhoardings.com/wp-content/uploads/2020/12/otdoor-hordings-logo.png" alt="">
+        </div>
+        <div class="flex">
+            <div class="hidden float-start sm:flex">
+                <ul class="flex">
+                    <a href="#">
+                        <li class="m-2 p-4 text-base md:text-lg lg:text-xl text-gray-400">Hoarding</li>
+                    </a>
+                    <a href="#">
+                        <li class="m-2 p-4 text-base md:text-lg lg:text-xl text-gray-400">Contact</li>
+                    </a>
+                    <a href="#">
+                        <li class="m-2 p-4 text-base md:text-lg lg:text-xl text-gray-400">Login/Register</li>
+                    </a>
+                </ul>
+            </div>
+            <div class="header-divider h-16 border-[0.5px] mx-2 mt-2 border-gray-400 flex "></div>
+            <div class="flex items-center">
+                <span class="material-symbols-outlined ">
+                    shopping_cart
+                </span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ------------------ vertical nav ----------------- -->
+
+    <div id="menu" class='cssmenu'>
+        <ul>
+            <li><a href='#'><span>Hoardings</span></a></li>
+            <li><a href='#'><span>contact</span></a></li>
+            <li><a href='#'><span>login/register</span></a></li>
+        </ul>
+    </div>
+
+    <!-- --------------------------image at background----------------------- -->
+    <div style="height: 60%;">
+        <div class="image 1;">
+            <img src="https://zippypixels.com/wp-content/uploads/2015/07/10-Realistic-billboard-PSD-824x542.jpg"
+                class="image1" alt="...">
+
+            <!-- ----------------------selector over image--------------------------- -->
+            <div class="selector">
+                <div class="flex">
+                    <div>
+                        <select class="form-select form-select-lg mb-3" id="first-selector"
+                            aria-label="Large select example" onchange="enableDistrictSelectors()">
+                            <option>--State--</option>
+                            <option value="1">One</option>
+                            <option value="2">Two</option>
+                            <option value="3">Three</option>
+                        </select>
+                    </div>
+                    <div>
+                        <select class="form-select form-select-lg mb-3" id="second-selector" disabled
+                            aria-label="Large select example" onchange="enableCitySelectors()">
+                            <option selected>--City--</option>
+                            <option value="1">One</option>
+                            <option value="2">Two</option>
+                            <option value="3">Three</option>
+                        </select>
+                    </div>
+                    <div class="btn">
+                        <Button class="bt-al">
+                            <p class="text-lg">Search</p>
+                        </Button>
+                    </div>
+                    <div>
+                        <!-- <select class="form-select form-select-lg mb-3" id="third-selector" disabled aria-label="Large select example">
+                <option selected>--Area--</option>
+                <option value="1">One</option>
+                <option value="2">Two</option>
+                <option value="3">Three</option>
+            </div>
+              </select> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- ---------------------------Hoarding types slider------------------------ -->
+        <br>
+
+
+        <div class="container">
+            <div class="container-heading">Hoarding types</div>
+            <ul class="cards">
+                <li class="card">
+                    <div>
+                        <div
+                            className='flex items-center before:border-t before:flex-1 before:border-gray-300 after:border-t after:flex-1 after:border-gray-300'>
+                            <p>Hoarding types</p>
+                        </div>
+                        <img src="https://www.shutterstock.com/image-photo/billboard-blank-outdoor-advertising-poster-260nw-262973936.jpg"
+                            class="w-full">
+                        <div class="card-content">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        </div>
+                    </div>
+                    <div class="card-link-wrapper">
+                        <a href="" class="card-link">Book hoarding</a>
+                    </div>
+                </li>
+                <li class="card">
+                    <div>
+                        <h2 class="card-title">Lit Hoarding</h2>
+                        <img src="https://www.shutterstock.com/image-photo/billboard-blank-outdoor-advertising-poster-260nw-262973936.jpg"
+                            class="w-full">
+
+                        <div class="card-content">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab repudiandae magnam harum
+                                natus fuga et repellat in maiores.</p>
+                        </div>
+                    </div>
+                    <div class="card-link-wrapper">
+                        <a href="" class="card-link">Book hoardinge</a>
+                    </div>
+                </li>
+                <li class="card">
+                    <div>
+                        <h2 class="card-title">Lit Hoarding</h2>
+                        <img src="https://www.shutterstock.com/image-photo/billboard-blank-outdoor-advertising-poster-260nw-262973936.jpg"
+                            class="w-full">
+
+                        <div class="card-content">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab repudiandae magnam harum
+                                natus fuga et repellat in maiores.</p>
+                        </div>
+                    </div>
+                    <div class="card-link-wrapper">
+                        <a href="" class="card-link">Book hoarding</a>
+                    </div>
+                </li>
+                <li class="card">
+                    <div>
+                        <h2 class="card-title">Lit Hoarding</h2>
+                        <img src="https://www.shutterstock.com/image-photo/billboard-blank-outdoor-advertising-poster-260nw-262973936.jpg"
+                            class="w-full">
+
+                        <div class="card-content">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab repudiandae magnam harum
+                                natus fuga et repellat in maiores.</p>
+                        </div>
+                    </div>
+                    <div class="card-link-wrapper">
+                        <a href="" class="card-link">Book hoarding</a>
+                    </div>
+                </li>
+                <li class="card">
+                    <div>
+                        <h2 class="card-title">Lit Hoarding</h2>
+                        <img src="https://www.shutterstock.com/image-photo/billboard-blank-outdoor-advertising-poster-260nw-262973936.jpg"
+                            class="w-full">
+
+                        <div class="card-content">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab repudiandae magnam harum
+                                natus fuga et repellat in maiores.</p>
+                        </div>
+                    </div>
+                    <div class="card-link-wrapper">
+                        <a href="" class="card-link">Book hoarding</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+
+        <!-- ----------------------------How it works--------------------------  -->
+        <div class="header-divider h-px p border-[0.5px] mx-2 mt-6 border-gray-400 flex ">
+
+        </div>
+
+
+        <div class="steps-to-work">
+            <div class="step1">
+                <div class="">
+                    <img src="https://t3.ftcdn.net/jpg/03/91/34/12/360_F_391341245_KZoIHUJSA4NpdQhjlfPxEtKTQVF4eDfp.jpg"
+                        class="w-full">
+                    <h2 class="step-title">Search and select</h2>
+                </div>
+            </div>
+
+            <div class="step1 ">
+                <div class="">
+                    <img src="https://media.istockphoto.com/id/1288288160/vector/tick-check-mark-icon-with-document-list-with-tick-check-marks-with.jpg?s=612x612&w=0&k=20&c=w9SxGrLykc374m6hCkvt7LfJqSEnzQvrfYvOgH_0j1o="
+                        class="w-full">
+                    <h2 class="step-title">Booking and Approval</h2>
+                </div>
+            </div>
+
+            <div class="step1 ">
+                <div class="">
+                    <img src="https://www.shutterstock.com/image-vector/hoarding-logo-cartoon-icon-design-260nw-2194354515.jpg"
+                        class="w-full">
+                    <h2 class="step-title">Go Live and see result</h2>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+
+        <!-- ------------------------top cities for your brand-------------------------- -->
+
+        <div class="grid-image-container">
+            <div class="row">
+                <div class="img img-1">
+                    <b>
+                        <p class="city">Mumbai</p>
+                    </b>
+                </div>
+                <div class="img img-2">
+                    <b>
+                        <p class="city">Bengaluru</p>
+                    </b>
+                </div>
+                <div class="img img-3">
+                    <b>
+                        <p class="city">Chennai</p>
+                    </b>
+                </div>
+                <div class="img img-4">
+                    <b>
+                        <p class="city">Delhi</p>
+                    </b>
+                </div>
+            </div>
+        </div>
+
+
+
+        <!-- -------------Our clients---------------- -->
+
+
+
+        <div class="container">
+
+            <div class="client-heading">
+                <p>Our clients</p>
+            </div>
+
+            <ul class="cards">
+                <li class="card2">
+                    <div class="">
+                        <img src="https://outdoorhoardings.com/wp-content/uploads/2021/03/zeel.png">
+                    </div>
+                </li>
+                <li class="card2">
+                    <div>
+                        <img src="https://outdoorhoardings.com/wp-content/uploads/2021/03/malabar.png">
+                    </div>
+
+                </li>
+                <li class="card2">
+                    <div>
+                        <img src="https://outdoorhoardings.com/wp-content/uploads/2020/12/godrej.jpg">
+                    </div>
+
+                </li>
+                <li class="card2">
+                    <div>
+                        <img src="https://outdoorhoardings.com/wp-content/uploads/2021/03/baroda.jpg">
+                    </div>
+
+                </li>
+                <li class="card2">
+                    <div>
+                        <img src="https://outdoorhoardings.com/wp-content/uploads/2020/12/TATA-MOTORS.jpg">
+                    </div>
+
+                </li>
+                <li class="card2">
+                    <div>
+                        <img src="https://outdoorhoardings.com/wp-content/uploads/2021/03/fybros.png">
+                    </div>
+
+                </li>
+            </ul>
+        </div>
+
+
+
+
+
+        <!-- /* -----------------------------About--------------------------- */ -->
+        <div class="about">
+            <div class="flex justify-between ml-8 mr-8">
+                <div class="">
+                    <div class="font-bold text-blue-400">ABOUT US</div>
+                    <div class="header-divider h-px border-[0.5px] mr-2 mt-2 border-gray-400 flex "></div>
+                    <div class="w-48 whitespace-wrap text-blue-300">
+                        Outdoor Hoardings - A Hoarding Search Engine for all types of Outdoor Marketing. Easy and
+                        efficient web portal for Hustle free Media Marketing All over INDIA.
+                    </div>
+                </div>
+
+                <div>
+                    <div class="text-blue-400 text-3xl mb-5">Categories</div>
+                    <div>
+                        <ul class="flex flex-col text-white">
+                            <li class="text-blue-400">Gantry</li>
+                            <div class="header-divider h-px border-[0.5px] mr-2 mt-3 border-blue-300 flex "></div>
+                            <li class="text-blue-400">Lit</li>
+                            <div class="header-divider h-px border-[0.5px] mr-2 mt-2 border-blue-300 flex "></div>
+                            <li class="text-blue-400">Non-Lit</li>
+                            <div class="header-divider h-px border-[0.5px] mr-2 mt-2 border-blue-300 flex "></div>
+                            <li class="text-blue-400">Pole Kiosk Lit</li>
+                            <div class="header-divider h-px border-[0.5px] mr-2 mt-2 border-blue-300 flex "></div>
+                            <li class="text-blue-400">Unipole</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div>
+                    <div class="font-bold text-blue-400">
+                        Follow Us
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- ------------------------------footer------------------------------ -->
+
+        <div class="footer">
+            <div class="copyright">
+                <p class="copyright-txt1">Copyright 2024 © Outdoor Hoardings </p>
+                <p class="copyright-txt2">Developed by White Spark Ideas</p>
+            </div>
+            <div class="payment-options">
+                <img src="https://static-00.iconduck.com/assets.00/visa-icon-2048x1286-6h0nxwoi.png" class="visa-image">
+                <img src="https://cdn1.iconfinder.com/data/icons/picons-social/57/social_mastercard-512.png"
+                    class="master-card">
+                <img src="https://static-00.iconduck.com/assets.00/bank-transfer-alt-icon-2048x1417-1nih8a4k.png"
+                    class="bank-transfer">
+                <img src="https://cdn4.vectorstock.com/i/1000x1000/59/73/google-pay-logo-symbol-white-design-vector-46335973.jpg"
+                    class="google-pay">
+            </div>
+        </div>
+
+
+
+
+
+</body>
+
+</html>

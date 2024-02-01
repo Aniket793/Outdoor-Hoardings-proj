@@ -1,0 +1,643 @@
+* {
+    color: rgb(78, 78, 78);
+}
+
+.image1 {
+    max-height: 60vh;
+    width: 100%;
+    object-fit: cover;
+}
+
+.selector {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+
+.selector select {
+    margin-right: 10px;
+    height: 3.5rem;
+    width: 10rem;
+    border-radius: 7px;
+}
+
+
+.btn {
+    margin-right: 10px;
+    height: 3.5rem;
+    width: 10rem;
+    border-radius: 7px;
+    background-color: white;
+    text-align: center;
+    display: flex;
+    align-items: center;
+
+}
+
+
+
+@media screen and (max-width: 616px) {
+    .selector select {
+        height: 2rem;
+        width: 90%;
+    }
+
+    .btn {
+        height: 2rem;
+    }
+}
+
+@media screen and (max-width: 860px) {
+    .selector select {
+        height: 2.5rem
+    }
+    .btn{
+        height: 2.5rem;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .selector select{
+        width: 97%;
+    }
+    .btn{
+        width: 97%;
+    }
+}
+
+@media screen and (max-width: 390px) {
+    .selector select {
+        margin-right: 7px;
+    }
+}
+
+
+
+/* ---------------------footer styling--------------------- */
+
+.footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: black;
+    color: white;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+    margin: 0;
+}
+
+@media screen and (max-width : 600px) {
+    .footer {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+.payment-options {
+    display: flex;
+}
+
+@media screen and(max-width:393px) {
+    .payment-options {
+        flex-direction: column;
+    }
+
+}
+
+.visa-image {
+    width: 60px;
+    height: 2.5rem;
+    background-color: gray;
+    margin: 10px;
+    margin-top: 10px;
+    border-radius: 10px;
+
+}
+
+.visa-image:hover {
+    background-color: white;
+}
+
+.master-card:hover {
+    background-color: white;
+}
+
+.bank-transfer:hover {
+    background-color: white;
+}
+
+.google-pay:hover {
+    background-color: white;
+}
+
+
+.master-card {
+    width: 60px;
+    height: 2.5rem;
+    background-color: gray;
+    margin: 10px;
+    margin-top: 10px;
+    border-radius: 10px;
+    margin-left: 5px;
+}
+
+.bank-transfer {
+    width: 60px;
+    height: 2.5rem;
+    background-color: gray;
+    margin: 10px;
+    margin-top: 10px;
+    border-radius: 10px;
+    margin-left: 5px;
+
+}
+
+.google-pay {
+    width: 60px;
+    height: 2.5rem;
+    background-color: black;
+    margin: 10px;
+    margin-top: 10px;
+    border-radius: 10px;
+    margin-left: 5px;
+}
+
+.copyright {
+    margin-left: 1rem;
+    margin-top: 10px;
+}
+
+.copyright-txt1 .copyright-txt2 {
+    font-size: medium;
+    color: rgb(180, 168, 168)
+}
+
+@media screen and (max-width:585px) {
+    .copyright-txt {
+        font-size: small;
+    }
+}
+
+/* -------------card carousel------------- */
+
+:root {
+    --blue: #2360ef;
+    --darkblue: #041ac0;
+    --platinum: #e5e5e5;
+    --black: #2b2d42;
+    --white: #fff;
+    --thumb: #edf2f4;
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font: 16px / 24px "Rubik", sans-serif;
+    color: var(--black);
+    background: var(--platinum);
+    /* margin: 50px 0; */
+}
+
+.container {
+    max-width: 1400px;
+    padding: 0 10px;
+    padding-top: 2%;
+
+}
+
+h2 {
+    font-size: 32px;
+    margin-bottom: 1em;
+}
+
+.cards {
+    display: flex;
+    padding: 25px 0px;
+    list-style: none;
+    overflow-x: scroll;
+    -ms-scroll-snap-type: x mandatory;
+    scroll-snap-type: x mandatory;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    flex: 0 0 100%;
+    padding: 20px;
+    background: var(--white);
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 15%);
+    scroll-snap-align: start;
+    transition: all 0.2s;
+}
+
+.card:not(:last-child) {
+    margin-right: 10px;
+}
+
+
+.card .card-title {
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card .card-content {
+    margin: 20px 0;
+    max-width: 85%;
+}
+
+.card .card-link-wrapper {
+    margin-top: auto;
+    display: flex;
+    justify-content: center;
+}
+
+.card .card-link {
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    background: var(--blue);
+    padding: 6px 12px;
+    border-radius: 8px;
+    transition: background 0.2s;
+}
+
+.card:hover .card-link {
+    background: var(--darkblue);
+}
+
+.cards::-webkit-scrollbar {
+    height: 8px;
+}
+
+.cards::-webkit-scrollbar-thumb,
+.cards::-webkit-scrollbar-track {
+    border-radius: 92px;
+}
+
+.cards::-webkit-scrollbar-thumb {
+    background: var(--blue);
+}
+
+.cards::-webkit-scrollbar-track {
+    background: var(--thumb);
+}
+
+@media (min-width: 500px) {
+    .card {
+        flex-basis: calc(50% - 10px);
+    }
+
+    .card:not(:last-child) {
+        margin-right: 20px;
+    }
+}
+
+@media (min-width: 700px) {
+    .card {
+        flex-basis: calc(calc(100% / 3) - 20px);
+    }
+
+    .card:not(:last-child) {
+        margin-right: 30px;
+    }
+}
+
+@media (min-width: 1100px) {
+    .card {
+        flex-basis: calc(25% - 30px);
+    }
+
+    .card:not(:last-child) {
+        margin-right: 40px;
+    }
+}
+
+.container-heading {
+    display: flex;
+    justify-content: center;
+    font-size: 50px;
+    color: black;
+}
+
+@media(max-width:960px) {
+    .container-heading {
+        font-size: 43px;
+    }
+
+}
+
+@media(max-width:840px) {
+    .container-heading {
+        font-size: 35px;
+        color: black;
+    }
+}
+
+
+
+
+/* ----------------clients------------- */
+
+.card2 {
+    max-width: max-content;
+}
+
+.card2 {
+    display: flex;
+    flex-direction: column;
+    flex: 0 0 100%;
+    padding: 0px;
+    background: var(--white);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 15%);
+    scroll-snap-align: start;
+    transition: all 0.2s;
+}
+
+
+.card2:not(:last-child) {
+    margin-right: 10px;
+}
+
+
+.card2 .card-content {
+    margin: 0;
+}
+
+@media (min-width: 500px) {
+    .card2 {
+        flex-basis: calc(50% - 10px);
+    }
+
+    .card2:not(:last-child) {
+        margin-right: 20px;
+    }
+}
+
+@media (min-width: 700px) {
+    .card2 {
+        flex-basis: calc(calc(100% / 3) - 20px);
+    }
+
+    .card2:not(:last-child) {
+        margin-right: 30px;
+    }
+}
+
+@media (min-width: 1100px) {
+    .card2 {
+        flex-basis: calc(25% - 30px);
+    }
+
+    .card2:not(:last-child) {
+        margin-right: 40px;
+    }
+}
+
+.client-heading {
+    display: flex;
+    justify-content: center;
+    font-size: 25px;
+    color: black;
+}
+
+
+/* ------------------------image grid styling---------------------- */
+
+.grid-image-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 80%;
+    margin-top: 20px;
+    margin-bottom: 40px;
+
+}
+
+
+
+.row {
+    width: 100%;
+    height: 100%;
+    max-width: 1000px;
+    margin: 10px 0;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.img {
+    height: 50%;
+    margin: 10px;
+    box-shadow: 10px 14px 20px 0px rgba(226, 204, 189, 1);
+}
+
+.img-1 {
+    background: url('https://cdn.britannica.com/26/84526-050-45452C37/Gateway-monument-India-entrance-Mumbai-Harbour-coast.jpg?w=200&h=200&c=crop') no-repeat center center;
+    /* background-size: cover; */
+    width: 100%;
+    height:30vh ; 
+
+}
+
+.img-2 {
+    background: url('https://cdn.cundall.com/uploads/images/Offices/_large_image/394546/Cundall-Bengaluru.webp?v=1694515627') no-repeat center center;
+    background-size: cover;
+    width: 100%;
+    height: 30vh;
+}
+
+.img-3 {
+    background: url('https://upload.wikimedia.org/wikipedia/commons/3/32/Chennai_Central.jpg') no-repeat center center;
+    /* background-size: cover; */
+    width: 100%;
+    height: 30vh;
+
+}
+
+.img-4 {
+    background: url('https://media.istockphoto.com/id/510795912/photo/india-gate.jpg?s=612x612&w=0&k=20&c=kZkdrEDXEtoLK6Qh8XPywc9VYV95mJXXcWLBxHftN_U=') no-repeat center center;
+    /* background-size: cover; */
+    width: 100%;
+    height:30vh;
+
+}
+
+@media screen and(max-width:450px) {
+    .img-1 .img-2 .img-3 .img-4{
+        height:20vh;
+        justify-content: center;
+        width: 10vh;
+    }
+}
+
+@media screen and (min-width: 800px) {
+    .row {
+        height: 600px;
+    }
+
+    .img {
+        height: 50%;
+    }
+
+    .img-1,
+    .img-4 {
+        width: 24%;
+    }
+
+    .img-2,
+    .img-3 {
+        width: 70%;
+    }
+}
+
+.city {
+    font-size: x-large;
+
+}
+
+
+
+
+/* -------------------------how it works-------------------- */
+
+.steps-to-work {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    max-width: 65%;
+    margin: auto;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+
+}
+
+
+.step1 {
+    width: 25%;
+    border: 2px solid gray;
+    border-radius: 8px;
+    padding: 4px;
+    transition: height 0.3s, box-shadow 0.3s;
+
+
+}
+
+.step1:hover {
+
+    box-shadow: 20px 20px 40px 0px rgba(0, 0, 0, 0.5);
+}
+
+@media(max-width:690px) {
+    .steps-to-work {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .step1 {
+        margin-bottom: 10px;
+        width: 50%;
+    }
+}
+
+
+
+.step-title {
+    font-size: large;
+    text-align: center;
+    padding-top: 2rem;
+}
+
+/* ----------------about------------- */
+.about {
+    background-color: #0417ab;
+    margin: 0;
+    padding: 0;
+}
+
+
+#menu {
+    visibility: hidden;
+}
+
+.cssmenu {
+
+    padding: 0;
+    margin: 0;
+    border: 0;
+    line-height: 1;
+}
+
+.cssmenu ul,
+.cssmenu ul li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.cssmenu ul li.hover,
+/* #cssmenu ul li:hover {position: relative; z-index: 599; cursor: default;} */
+
+.cssmenu {
+    width: 200px;
+    background: #f7f7f7;
+    font-family: sans-serif;
+    font-weight: bold;
+    zoom: 1;
+    font-size: 12px;
+    z-index: 50;
+    position: fixed;
+
+}
+
+.cssmenu:before {
+    content: '';
+    display: block;
+}
+
+.cssmenu:after {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+.cssmenu a {
+    display: block;
+    padding: 15px 20px;
+    color: #f26724;
+    text-decoration: none;
+    text-transform: uppercase;
+    border-bottom: 1px solid #ffffff;
+}
+
+.cssmenu>ul {
+    width: 200px;
+    position: sticky;
+    z-index: 40;
+}
+
+.cssmenu>ul>li>a {
+    border-left: 4px solid #095586;
+    color: #095586;
+}
+
+.cssmenu>ul>li a:hover {
+    background: #095586;
+    color: #f1f1f1;
+
+}
