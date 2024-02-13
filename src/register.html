@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link href="./output.css" rel="stylesheet">
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+
+  <link rel="stylesheet" href="./style.css">
+
+
+</head>
+
+<body>
+  <nav class="bg-white flex justify-between items-center border-b-2 border-gray-300 shadow-lg p-4 sticky z-50 top-0 "
+    style="height: 4.5rem;">
+
+    <div class="sm:hidden">
+      <input type="checkbox" id="menu-toggle" />
+      <label for="menu-toggle" class="menu-icon"><i></i>
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="h-6 w-6">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7">
+          </path>
+        </svg>
+
+      </label>
+      <div class="slideout-sidebar">
+        <ul>
+          <a href="./index.html">
+            <li>Home</li>
+          </a>
+          <a href="./Hoardings.html">
+            <li>Hoarding</li>
+          </a>
+          <a href="./Contact.html">
+            <li>Contact</li>
+          </a>
+          <a href="./login.html">
+            <li>Login</li>
+          </a>
+          <a href="./register.html">
+            <li>Register</li>
+          </a>
+        </ul>
+      </div>
+    </div>
+    <div class="w-40 m-3">
+      <a href="./index.html"><img src="https://outdoorhoardings.com/wp-content/uploads/2020/12/otdoor-hordings-logo.png"
+          alt=""></a>
+    </div>
+    <div class="flex">
+      <div class="hidden float-start sm:flex">
+        <ul class="flex">
+          <a href="./Hoardings.html">
+            <li class="m-2 p-4 text-base md:text-lg lg:text-xl text-gray-400">Hoarding</li>
+          </a>
+          <a href="#">
+            <li class="m-2 p-4 text-base md:text-lg lg:text-xl text-gray-400">Contact</li>
+          </a>
+          <a href="./login.html">
+            <li class="m-2 p-4 text-base md:text-lg lg:text-xl text-gray-400">Login</li>
+          </a>
+          <a href="./register.html">
+            <li class="m-2 p-4 text-base md:text-lg lg:text-xl text-gray-400">Register</li>
+          </a>
+        </ul>
+      </div>
+      <div class="header-divider h-16 border-[0.5px] mx-2 mt-2 border-gray-400 flex "></div>
+      <div class="flex items-center">
+        <span class="material-symbols-outlined ">
+          shopping_cart
+        </span>
+      </div>
+    </div>
+  </nav>
+
+  <section class='font-bold bg-white h-screen'>
+    <h1 class='text-center text-4xl py-8 '>Register</h1>
+    <div class='flex max-w-[67%] mx-auto items-center space-x-5 flex-wrap '>
+      <div class='md:w-[67%] lg:w-[50%] mb-12 md:mb-6'>
+        <img src="https://img.freepik.com/free-vector/sign-concept-illustration_114360-5425.jpg" class='w-full'
+          alt="" />
+      </div>
+      <div class='w-full md:w-[50%] lg:w-[40%] lg:ml-20'>
+        <form>
+          <input class='w-full py-2 mb-3 rounded-sm px-4 transition ease-in-out outline-double' id='email' type="text"
+            placeholder='Email Address ' />
+          <div class='relative'>
+            <input class='w-full py-2 mb-3 rounded-sm px-4 transition ease-in-out outline-double' id='password'
+              type="password" placeholder='Password' />
+
+          </div>
+
+          <div class='flex lg:mt-3 justify-between text-sm mb-4'>
+            <a href="./login.html">
+              <p>Already have an account!
+                <span class='ml-1 text-red-500 hover:text-red-700 transition duration-200 ease-in-out'>Login</span>
+              </p>
+            </a>
+            <a href="./forgot-password.html">
+              <p>
+                <span class=' text-blue-500 hover:text-blue-700 transition duration-200 ease-in-out'>Forgot
+                  Password</span>
+              </p>
+            </a>
+          </div>
+          <button
+            class='my-3 bg-blue-600 w-full py-2 rounded-sm cursor-pointer text-white text-lg hover:bg-blue-700 shadow-sm transition duration-300 ease-in-out active:bg-blue-800 hover:shadow-lg'>Sign
+            in</button>
+          <!-- <div class='flex items-center my-3   before:border-t before:flex-1 before:border-gray-300 after:border-t after:flex-1 after:border-gray-300'>
+                <p class='text-center mx-3'>OR</p>
+              </div> -->
+
+          <!-- <button onClick={onGoogleClick} type='button' class='flex w-full shadow-sm hover:shadow-xl hover:bg-red-600  active:bg-red-700 transiton duration-300 ease-in-out text-white uppercase items-center justify-center rounded-sm  bg-red-500 py-3 px-3 my-2'>
+                
+                Continue with google
+            </button>   -->
+        </form>
+
+      </div>
+    </div>
+  </section>
+</body>
+
+</html>
